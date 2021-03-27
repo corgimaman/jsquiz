@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/questions.js"></script>
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/highscores.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div id="high-scores"><a href="./highscores.html">High Scores</a></div>
+        <div id="score" class="hide">Current Score: 0</div> 
+        <div>Seconds Remaining: <span id="timer">60</span></div>
+    </div>
+    <div class="container">
+        <div id="start-container">
+            <h1>JavaScript Quiz</h1>
+            <p>Hafa adai! This is a timed JavaScript quiz that will test your knowledge on JavaScript.<br>
+                There are 5 questions, multiple choice quiz with 4 answers.<br>
+                Each correct score gets you 10 points. If you answer incorrectly, time will be deducted from the timer.<br>
+                Good luck! 🙂
+            </p>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div id="end-container" class="hide">
+            <h1>Quiz Over!</h1>
+            <p> Enter your initials to save your score:</p>
+            <input maxlength="3" id="initials" placeholder="Type your initials here!"> </input>                
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="btn">Start</button>
+            <button id="next-btn" class="btn hide">Next</button>
+            <button id="finish-btn" class="btn hide">Finish</button>
+            <button id="submit-btn" class="btn hide">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
