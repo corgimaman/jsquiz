@@ -154,13 +154,21 @@ function saveScore(){
 }
 
 // event listeners
-startButton.addEventListener('click', startGame)
+if(startButton){
+    startButton.addEventListener('click', startGame)
+}
 
-nextButton.addEventListener('click', () => {
+if(nextButton){
+    nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     nextQuestion()
-})
+    })
+}
 
-finishButton.addEventListener('click', endGame)
+if(finishButton){
+    finishButton.addEventListener('click', endGame)
+}
 
-submitButton.addEventListener('click', saveScore)
+if(submitButton){
+    submitButton.addEventListener('click', saveScore)
+}

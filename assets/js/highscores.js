@@ -11,7 +11,9 @@ function printHighscores() {
         liTag.textContent = score.initials + " - " + score.score
         // display on the page
         var olElement = document.getElementById("highscores-list")
-        olElement.appendChild(liTag)
+        if (olElement){
+            olElement.appendChild(liTag)
+        }
     })
 }
 
@@ -25,6 +27,7 @@ function clearScores() {
 // }
 
 // restartButton.addEventListener('click', restartGame)
-clearButton.addEventListener('click', clearScores)
+if (clearButton){
+clearButton.addEventListener('click', clearScores)}
 
 printHighscores();
