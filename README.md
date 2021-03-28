@@ -13,4 +13,4 @@ To take the test, visit the site and press start. You have 60 seconds to answer 
 
 ## What I Learned
 
-In doing this assignment, I learned to use functions of JavaScript such as creating a timer, on click events, and use the elements from the HTML to display content and change based on events (such as when the screen and buttons change to green and red). 
+In doing this assignment, I learned to use functions of JavaScript such as creating a timer, on click events, and use the elements from the HTML to display content and change based on events (such as when the screen and buttons change to green and red). I also learned to use the local storage to create something like the high scores page and how to add sound effects.
