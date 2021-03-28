@@ -17,6 +17,10 @@ let score
 
 let shuffledQuestions, currentQuestionIndex
 
+// sound effects
+var soundRight = new Audio("./assets/sounds/correct.wav");
+var soundWrong = new Audio("./assets/sounds/incorrect.wav");
+
 // startGame hides the start button and intro text and shuffles the questions
 function startGame() {
     startButton.classList.add('hide')
@@ -88,8 +92,10 @@ function selectAnswer(e) {
     if (correct) {
         currentScore += 10
         scoreElement.textContent = "Current Score: " + currentScore
+        soundRight.play()
     } else {
         timerCount -= 10
+        soundWrong.play()
     }
     // checks to see if we are on the last question
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
